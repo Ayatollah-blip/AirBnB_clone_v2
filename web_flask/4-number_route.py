@@ -33,8 +33,9 @@ def python_rout(text='is cool'):
     return "Python " + text.replace('_', ' ')
 
 
-@app.route('/number/<n>')
+@app.route('/number/<int:n>')
 def number_rout(n):
+    """ return if number"""
     return "{:d} is a number".format(n)
 
 
