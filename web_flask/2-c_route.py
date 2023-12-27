@@ -22,7 +22,7 @@ def HBNB():
 @app.route("/c/<text>")
 def c_route(text):
     """ def doc """
-    return "C " + text
+    return "C " + text.replace('_',' ')
 
 
 if __name__ == "__main__":
