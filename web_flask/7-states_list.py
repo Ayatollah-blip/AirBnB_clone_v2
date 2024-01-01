@@ -2,7 +2,7 @@
 """ module doc"""
 
 from flask import Flask, render_template
-from flask_sqlalhemy import SQLAlchemy
+from models import *
 from models import storage
 app = Flask(__name__)
 
